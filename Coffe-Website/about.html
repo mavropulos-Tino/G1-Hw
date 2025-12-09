@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Coffee Website</title>
+  
+  <!-- Main Styles -->
+  <link rel="stylesheet" href="styles/style.css">
+
+  <!-- Style Components -->
+  <link rel="stylesheet" href="styles/Component_Styles/header.css">
+  <link rel="stylesheet" href="styles/Component_Styles/footer.css">
+
+  <!-- Page Styles -->
+  <link rel="stylesheet" href="styles/Page_Styles/about.css">
+</head>
+<body>
+
+  <header>
+
+    <!-- Main Toggle For Mobile Sidebar -->
+    <input type="checkbox" id="Active-Sidebar"> 
+
+    <div>
+      <h2>Coffee Website</h2>
+    </div>
+
+    <!-- Menu Icon -->
+    <label for="Active-Sidebar" id="Open-Sidebar">
+      <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+      </svg>
+    </label>
+
+    <nav class="Navigation-Bar">
+
+      <!-- Close Button -->
+      <label for="Active-Sidebar" id="Close-Sidebar">
+        <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+        </svg>
+
+      </label>
+      <ul>
+        <a href="index.html">Home</a>
+        <a class="active" href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="shop.html">Shop</a>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Coffee Type Container -->
+    <section class="Types-Of-Coffee Section">
+      <h2>Types of Coffee</h2>
+      <p>
+        <b>Espresso:</b> concentrated coffee brewed by forcing hot water through finely-ground beans. <br>
+        <b>Latte:</b> espresso with steamed milk. <br>
+        <b>Cappuccino:</b> espresso, steamed milk, and a thick milk foam. <br>
+        <b>Macchiato:</b> espresso “stained” with a small amount of milk or foam.
+      </p>
+    </section>
+
+    <!-- History Container -->
+    <section class="History-Of-Coffee Section">
+      <h2>History of Coffee</h2>
+      <p>
+        Coffee’s story begins in the ancient highlands of Ethiopia, where legend tells of a goat herder who noticed his animals becoming unusually energetic after eating bright red berries. These berries eventually made their way across the Red Sea to Yemen, where monks brewed the first versions of the drink to help them stay awake during long nights of prayer.
+      </p>
+    </section>
+
+    <!-- Beans Container -->
+    <section class="Coffee-Beans">
+      <h2>Coffee Beans</h2>
+      <div class="Card-Container">
+        <article class="Card">
+          <h2>Arabica</h2>
+          <p>Generally sweeter and more aromatic, contains less caffeine.</p>
+        </article>
+        <article class="Card">
+          <h2>Robusta</h2>
+          <p>Stronger, more bitter, higher caffeine content and often used in espresso blends for crema.</p>
+        </article>
+        <article class="Card">
+          <h2>Liberica</h2>
+          <p>Known for their unique, bold, woody, smoky, and fruity flavor.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Brewing Container -->
+    <section class="Brewing-Methods Section">
+      <h2>Brewing Methods</h2>
+      <div class="Card-Container">
+        <article class="Card article1">
+          <h2>Espresso</h2>
+          <ol>
+            <li>Grind beans fine.</li>
+            <li>Dose 18-20 g (single ~9-10 g), tamp firmly.</li>
+            <li>Brew with 9-10 bar pressure for ~25-30 s.</li>
+            <li>Serve 25-40 ml.</li>
+          </ol>
+        </article>
+        <article class="Card article2">
+          <h2>Latte</h2>
+          <ol>
+            <li>Pull one or two espresso shots.</li>
+            <li>Steam milk until velvety microfoam forms.</li>
+            <li>Pour milk over espresso, holding back foam, finish with thin foam layer.</li>
+            <li>Serve in a tall cup.</li>
+          </ol>
+        </article>
+        <article class="Card article3">
+          <h2>Cappuccino</h2>
+          <ol>
+            <li>Pull one or two espresso shots.</li>
+            <li>Steam milk to a thicker, airy foam (more foam than a latte).</li>
+            <li>Pour steamed milk and foam over espresso, aiming for ~1:1:1 espresso:milk:foam.</li>
+            <li>Serve in a smaller cup.</li>
+          </ol>
+        </article>
+        <article class="Card article4">
+          <h2>Macchiato</h2>
+          <ol>
+            <li>Pull a single espresso shot.</li>
+            <li>Steam a small amount of milk to create thick foam.</li>
+            <li>Spoon a dollop of foam onto the espresso (“stain” it).</li>
+            <li>Serve immediately.</li>
+          </ol>
+        </article>
+      </div>
+    </section>
+
+    <!-- Health Container -->
+    <section class="Health-Benefits Section">
+      <h2>Health Benefits</h2>
+      <p>
+        Coffee is rich in antioxidants and can help boost energy, focus, and mood. Studies suggest it may support heart health, improve physical performance, and reduce the risk of certain diseases when consumed in moderation. It’s a simple daily drink that can offer both comfort and wellness benefits.
+      </p>
+    </section>
+
+    <!-- Coffee Around The World Container -->
+    <section class="Coffee-Around-The-World Section">
+      <h2>Coffee Around the World</h2>
+      <p>
+        Coffee culture varies widely across the globe. In Italy, espresso is enjoyed quickly at the bar; in Turkey, coffee is brewed thick and strong, often with sugar. Ethiopia celebrates coffee with traditional ceremonies, while Japan has mastered both pour-over precision and canned coffee convenience. Each country adds its own flavor, making coffee a truly global tradition.
+      </p>
+    </section>
+  </main>
+  
+  <footer class="footer">
+    <!-- Text Description Of The Website -->
+    <section class="Description-Section">
+      <h2>About Our Coffee</h2>
+      <p>
+        We bring you the finest coffee from around the world. Enjoy fresh blends, learn about our origins, and savor the taste of a perfect cup.
+      </p>
+    </section>
+
+    <!-- Links Container For Pages -->
+    <section class="Links-Section">
+      <h2>Quick Links</h2>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="shop.html">Shop</a></li>
+      </ul>
+    </section>
+
+    <!-- Contact Information Container -->
+    <section class="Inquiry-Section">
+      <h2>Contact Us</h2>
+      <p>Email: info@coffeewebsite.com</p>
+      <p>Phone: +389 456 7890</p>
+    </section>
+  </footer>
+
+  <!-- Copyright Label -->
+  <p class="Copyright">© 2025 Cafee Website</p>
+
+</body>
+</html>

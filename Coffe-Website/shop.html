@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Coffee Website</title>
+
+  <!-- Main Styles -->
+  <link rel="stylesheet" href="styles/style.css">
+
+  <!-- Style Components -->
+  <link rel="stylesheet" href="styles/Component_Styles/header.css">
+  <link rel="stylesheet" href="styles/Component_Styles/footer.css">
+ 
+  <!-- Page Styles -->
+  <link rel="stylesheet" href="styles/Page_Styles/shop.css">
+</head>
+<body>
+
+  <header>
+
+    <!-- Main Toggle For Mobile Sidebar -->
+    <input type="checkbox" id="Active-Sidebar"> 
+
+    <div>
+      <h2>Coffee Website</h2>
+    </div>
+
+    <!-- Menu Icon -->
+    <label for="Active-Sidebar" id="Open-Sidebar">
+      <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+      </svg>
+    </label>
+
+    <nav class="Navigation-Bar">
+
+      <!-- Close Button -->
+      <label for="Active-Sidebar" id="Close-Sidebar">
+        <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+        </svg>
+
+      </label>
+      <ul>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a class="active" href="shop.html">Shop</a>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Promotions Container -->
+    <section class="Promotions-Container">
+      <article class="Promotion" id="card-1">
+        <img src="./images/Espresso.jpg">
+        <h3>Espresso</h3>
+        <p class="price"><s>$21.99</s> $16.99</p>
+        <button class="Button">Add to Cart</button>
+      </article>
+      <article class="Promotion" id="card-2">
+        <img src="./images/Latte.jpg">
+        <h3>Latte</h3>
+        <p class="price"><s>$24.99</s> $19.99</p>
+        <button class="Button">Add to Cart</button>
+      </article>
+      <article class="Promotion" id="card-3">
+        <img src="./images/Cappuccino.jpg">
+        <h3>Cappuccino</h3>
+        <p class="price"><s>$14.99</s> $9.99</p>
+        <button class="Button">Add to Cart</button>
+      </article>
+      <article class="Promotion" id="card-4">
+        <img src="./images/Macchiato.jpg">
+        <h3>Macchiato</h3>
+        <p class="price"><s>$13.99</s> $8.99</p>
+        <button class="Button">Add to Cart</button>
+      </article>
+    </section>
+
+    <!-- Order Container -->
+    <section class="Order-Section">
+      <form class="Order-Form" action="#" method="POST">
+        <label for="Coffee-Type">Select Coffee Type:</label>
+        <select id="Coffee-Type" name="Coffee_Type" required>
+          <option value="" disabled selected>Select a coffee</option>
+          <option value="espresso">Espresso</option>
+          <option value="macchiato">Macchiato</option>
+          <option value="cappuccino">Cappuccino</option>
+          <option value="latte">Latte</option>
+        </select>
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="10" value="1" required>
+
+        <label for="name">Adress:</label>
+        <input id="name" name="name" type="text" placeholder="Your Adress..." required>
+
+        <button type="submit">Go to checkout</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <!-- Text Description Of The Website -->
+    <section class="Description-Section">
+      <h2>About Our Coffee</h2>
+      <p>
+        We bring you the finest coffee from around the world. Enjoy fresh blends, learn about our origins, and savor the taste of a perfect cup.
+      </p>
+    </section>
+
+    <!-- Links Container For Pages -->
+    <section class="Links-Section">
+      <h2>Quick Links</h2>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="shop.html">Shop</a></li>
+      </ul>
+    </section>
+
+    <!-- Contact Information Container -->
+    <section class="Inquiry-Section">
+      <h2>Contact Us</h2>
+      <p>Email: info@coffeewebsite.com</p>
+      <p>Phone: +389 456 7890</p>
+    </section>
+  </footer>
+
+  <!-- Copyright Label -->
+  <p class="Copyright">© 2025 Cafee Website</p>
+  
+</body>
+</html>

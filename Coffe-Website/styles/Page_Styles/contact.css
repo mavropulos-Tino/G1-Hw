@@ -1,0 +1,179 @@
+/* Universal Style Importing */
+@import url(../style.css);
+
+main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+
+  max-width: 1500px;
+  width: 95%;
+  margin: 1rem auto;
+  border-radius: 1rem;
+}
+
+/* Grid Partitions */
+.Contact-Section { grid-area: 1 / 1 / 3 / 2; }
+.Map-Section     { grid-area: 1 / 2 / 2 / 3; }
+.Socials-Section { grid-area: 2 / 2 / 3 / 3; }
+.FAQ-Section     { grid-area: 3 / 1 / 4 / 3; }
+
+/* Contact Form Styles */
+.Contact-Section {
+  width: 100%;
+  background: var(--background);
+  border-radius: 1rem;
+}
+.Contact-Section h2 {
+  margin-bottom: 1rem;
+}
+.Contact-Form {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  color: var(--text-dark);
+}
+.Contact-Form label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+}
+.Contact-Form input, .Contact-Form textarea {
+  width: 100%;
+  padding: 1rem;
+
+  background: var(--text);
+  border: 1px solid#ccc;
+  border-radius: 1rem;
+  outline: none;
+
+  font-size: 1rem;
+  transition: 150ms;
+}
+.Contact-Form label input {
+  margin-right: .5rem;
+  width: auto;
+}
+.Contact-Form button {
+  margin-top: .5rem;
+  padding: 1rem;
+
+  background:#76c9a8;
+  border: none;
+  border-radius: 1rem;
+  
+  color: var(--text);
+  font-size: 1rem;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: 150ms;
+}
+.Contact-Form button:hover {
+  background:#5ebd96;
+  transform: translateY(-2px);
+}
+
+/* Map Styles */
+.Map-Section {
+  background: var(--background);
+  border-radius: 1rem;
+}
+.Map-Section h2 {
+  margin-bottom: 1rem;
+}
+.Map-Section iframe {
+  border: none;
+  border-radius: 1rem;
+}
+
+/* Social and Newsletter Styles */
+.Socials-Section {
+  background: var(--background);
+  border-radius: 1rem;
+}
+.Socials-Section h2 {
+  margin-bottom: 1rem;
+}
+
+/* Newsletter Styles*/
+.Newsletter {
+  max-width: 100%;
+
+  color: var(--text);
+  border-radius: 1rem;
+}
+.Newsletter h2 {
+  margin-top: 1rem;
+}
+
+/* Newsletter Form Styles */
+.Newsletter-Form {
+  display: flex;
+  justify-content: center;
+  gap: .8rem;
+
+  margin-top: 1rem;
+}
+.Newsletter-Form input {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+
+  flex: 1;
+}
+.Newsletter-Form button {
+  padding: 1rem;
+
+  background: var(--background-dark);
+  border: none;
+  border-radius: 8px;
+  
+  color: var(--text);
+  
+  cursor: pointer;
+  transition: 150ms;
+}
+.Newsletter-Form button:hover {
+  scale: 1.050;
+}
+
+/* FAQ Styles */
+.FAQ-Section {
+  background: var(--background);
+  border-radius: 1rem;
+  color: var(--text);
+}
+.FAQ-Section h2 {
+  margin-bottom: 1rem;
+}
+.FAQ-Section details {
+  margin: .2rem 0;
+  padding: 1rem;
+
+  background: var(--background-dark);
+  border-radius: 1rem;
+  
+  cursor: pointer;
+}
+
+/* Tablet Compatibility */
+@media (max-width: 1200px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr) repeat(2, 0.5fr);
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+  }
+
+    .Contact-Section { grid-area: 1 / 1 / 2 / 3; }
+    .Map-Section { grid-area: 2 / 1 / 3 / 3; }
+    .Socials-Section { grid-area: 3 / 1 / 4 / 3; }
+    .FAQ-Section { grid-area: 4 / 1 / 5 / 3; }
+}
