@@ -130,12 +130,12 @@ function getGameRandoms() { // Picking a random category and word
     // Random category
     let randomCategory = hangmanWords[Math.floor(Math.random() * hangmanWords.length)];
     // Random word form category
-    let randomWordObj = randomCategory.words[Math.floor(Math.random() * randomCategory.words.length)];
+    let randomWord = randomCategory.words[Math.floor(Math.random() * randomCategory.words.length)];
 
     let randomCategoryAndWord = {
         category: randomCategory.category,
-        word: randomWordObj.word,
-        hint: randomWordObj.hint,
+        word: randomWord.word,
+        hint: randomWord.hint,
     }
     return randomCategoryAndWord;
 }
