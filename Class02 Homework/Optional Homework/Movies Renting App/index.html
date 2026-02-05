@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background: #191919;
+            color: #fff;
+        }
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+        .container {
+            background: #111;
+            padding: 2rem;
+            border-radius: .5rem;
+        }
+        .container input {
+            background: #191919;
+            height: 2rem;
+            color: #fff;
+            padding: 1rem;
+            border-radius: .5rem;
+            outline: none;
+            border: none;
+        }
+        .container button {
+            background: #191919;
+            height: 2rem;
+            padding: 0 1rem;
+            color: #fff;
+            border-radius: .5rem;
+            outline: none;
+            border: none;
+            cursor: pointer;
+        }
+        .container h1 {
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin-top: 1rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Movie Renting App</h1>
+    <div class="container">
+        <input type="text" id="input" placeholder="Movie name here...">
+        <button type="button" id="button">Search</button>
+        <h1 id="result"></h1>
+    </div>
+
+    <details>
+    <summary>Movies</summary>
+    <ul>
+        <li>shawshank redemption</li>
+        <li>godfather</li>
+        <li>the dark knight</li>
+        <li>pulp fiction</li>
+        <li>forrest gump</li>
+        <li>inception</li>
+        <li>the matrix</li>
+        <li>goodfellas</li>
+        <li>fight club</li>
+        <li>interstellar</li>
+        <li>the lord of the rings: the return of the king</li>
+        <li>star wars: episode v - the empire strikes back</li>
+        <li>the silence of the lambs</li>
+        <li>saving private ryan</li>
+        <li>schindler's list</li>
+        <li>jurassic park</li>
+        <li>the green mile</li>
+        <li>gladiator</li>
+        <li>the departed</li>
+        <li>whiplash</li>
+    </ul>
+    </details>
+    
+    <script src="script.js"></script>
+</body>
+</html>
