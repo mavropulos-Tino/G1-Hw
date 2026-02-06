@@ -8,7 +8,7 @@ function makeElements(data) {
     h1.textContent = data.academy;
 
     let ul = document.createElement('ul');
-    for(student of data.students) {
+    for(let student of data.students) {
         let li = document.createElement('li');
         li.textContent = student;
         ul.appendChild(li);

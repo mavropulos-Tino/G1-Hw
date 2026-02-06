@@ -23,6 +23,7 @@ function cleanInvalids(input) {
 }
 
 function filterArray() {
+    outputArray = [];
     for(let i=0; i<test.length; i++) {
         // onlyStirngs(i);
         // onlyNums(i);

@@ -7,7 +7,7 @@ function Student(firstName, lastName, birthYear, academy, grades) {
 
     this.getAge = function() {
         let currentYear = new Date().getFullYear();
-        return currentYear - birthYear;
+        return currentYear - this.birthYear;
     },
     this.getInfo = function() {
         return `This is student ${this.firstName} ${this.lastName} from the academy ${this.academy}!`;
@@ -15,7 +15,7 @@ function Student(firstName, lastName, birthYear, academy, grades) {
     this.getGradesAverage = function() {
         let count = 0;
         for(let i=0; i<this.grades.length; i++) {
-            count += i;
+            count += this.grade[i];
         }
         return count / this.grades.length;
     }
