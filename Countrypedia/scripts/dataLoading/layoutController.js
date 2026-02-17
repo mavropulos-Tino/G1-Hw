@@ -9,13 +9,13 @@ const initializeLayoutController = (data, status) => {
         if(!status) {
             return;
         }
-        enableGridView();
-        loadData(data, status);
+        enableGridView(); // In utilities.js
+        loadData(data, status); // After that we reload the data and the correct format
 
+        // Some functions to reset the filter buttons styles and some boolean toggles;
         setButtonToInactiveStyle();
         setFilterToInactiveState();
         removeFilters(data);
-
         searchInput.value = '';
     });
 
@@ -23,13 +23,15 @@ const initializeLayoutController = (data, status) => {
         if(!status) {
             return;
         }
+
+        // Same as in grid View
+
         enableTableView();
         loadData(data, status);
 
         setButtonToInactiveStyle();
         setFilterToInactiveState();
         removeFilters(data);
-
         searchInput.value = '';
     });
 }

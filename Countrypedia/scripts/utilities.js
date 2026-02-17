@@ -45,13 +45,13 @@ const setButtonToInactiveStyle = () => { // Removes Active State CSS Style From 
     });
 }
 
-function setFilterToActiveState(filter) { // Sets The Boolean Of The Currently Selected Filter To True And False To The Other Ones
+const setFilterToActiveState = filter => { // Sets The Boolean Of The Currently Selected Filter To True And False To The Other Ones
     for (const key in filterStates) {
         filterStates[key] = false;
     }
     filterStates[filter] = true;
 }
-function setFilterToInactiveState() { // Sets All Filter States To Default
+const setFilterToInactiveState = () => { // Sets All Filter States To Default
     for (const key in filterStates) {
         filterStates[key] = false;
     }

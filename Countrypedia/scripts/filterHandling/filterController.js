@@ -4,7 +4,7 @@ const filterStates = { // Object Where The Filter Boolean States (refrenced In U
     landlocked: false
 };
 
-const initializeFilterContorller = (data, status) => { // We Need This Function To Get The Fetch Data And Status From fetchData.js
+const initializeFilterController = (data, status) => { // We Need This Function To Get The Fetch Data And Status From fetchData.js
     document.getElementById('filterEurope') // Click Listener For The Filter Europe Button
     .addEventListener('click', () => {
         if(!status) {
@@ -48,5 +48,6 @@ const initializeFilterContorller = (data, status) => { // We Need This Function 
         setButtonToInactiveStyle();
         setFilterToInactiveState();
         removeFilters(data);
+        searchInput.value = '';
     });
 }
